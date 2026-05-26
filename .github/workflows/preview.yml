@@ -31,7 +31,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: refs/pull/${{ env.PR_NUMBER }}/head
+          ref: refs/pull/${{ env.PR_NUMBER }}/merge
 
       - name: Build Check
         uses: ./.github/actions/build
